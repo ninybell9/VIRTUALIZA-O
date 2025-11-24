@@ -1,0 +1,220 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(imagens/Design\ sem\ nome\ \(5\).png);
+}
+
+header {
+    padding: 1.8rem 1rem;
+    text-align: center;
+    color: #642e2e;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    opacity: 0.9;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover, nav a.active {
+    color: #010607;
+    border-bottom: 2px solid #dd0b38;
+}
+
+/* ===== CONTEÚDO ===== */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #ec8eaf;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 25px rgb(234, 61, 61);
+}
+
+/* ===== HOME ===== */
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.links {
+    display: absolute;
+    justify-content: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 800px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn.primary {
+    background: #9cdff1;
+    color: #fff;
+}
+
+.btn.secondary {
+    background: #9cdff1;
+    color: #fff;
+}
+
+.btn.glow {
+    background: #b76fee;
+    color: #fff;
+    box-shadow: 0 0 10px #d3a9fa;
+}
+
+.btn:hover {
+    transform: translateY(3px);
+    box-shadow: 0 0 15px rgba(181, 179, 179, 0.952);
+}
+
+/* ===== SEÇÕES ===== */
+.card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(4px);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+/* ===== QUIZ ===== */
+.quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.question {
+    background: #f2efd0;
+    padding: 1.2rem;
+    border-radius: 8px;
+}
+
+.question h3 {
+    color: #010000;
+    margin-bottom: 0.5rem;
+}
+
+.options label {
+    display: block;
+    background: #ffffff;
+    color: #000000;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin: 0.3rem 0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.options label:hover {
+    background: #dbb1ec;
+}
+
+/* ===== RESULTADO ===== */
+.resultado {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    border-top: 1px solid #f1eaea;
+    margin-top: 2rem;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; /* coloca um embaixo do outro */
+    align-items: center;    /* centraliza os botões */
+    gap: 15px;              /* espaçamento entre eles */
+    margin-top: 30px;
+}
+
+.menu button {
+    width: 250px;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #f1d4d4, #fafafa);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+}
+
+/* ===== AFASTAR O BOTÃO "DESCOBRIR CURIOSIDADE" ===== */
+#btnCuriosidade {
+    display: block;
+    margin-top: 23px; /* aumenta o espaço acima do botão */
+    margin-left: 0;
+    margin-right: 0;
+}
+
